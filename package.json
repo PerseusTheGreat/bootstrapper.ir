@@ -1,0 +1,32 @@
+{
+  "name": "bootstrapper.ir",
+  "version": "1.0.0",
+  "revision": "0",
+  "description": "Frontpage of Bootstrap 4 RTL presentation website",
+  "author": "Arash Laylazi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerseusTheGreat/bootstrapper.ir.git"
+  },
+  "license": "MIT",
+  "homepage": "http://bootstrapper.ir/",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap",
+    "rtl",
+    "css",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "Arash",
+    "Laylazi",
+    "Leilazi",
+    "Leylazi",
+    "Arash Laylazi"
+  ],
+  "directories": {},
+  "peerDependencies": {},
+  "style": {}
+}
