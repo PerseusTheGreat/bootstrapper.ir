@@ -2,7 +2,7 @@
 
 - Adapted by [Arash Laylazi](https://github.com/PerseusTheGreat)
 - Latest dist.: [Version 4.3.1 (Official, ~~Weekly build~~) + RTL 4.3.1 rev. 7 (Unofficial)](http://example.bootstrapper.ir/archive/bootstrap-4.3.1-plus-rtl-rev.7-dist.zip)
-- Visit [Codebase](https://github.com/PerseusTheGreat/bootstrap-4-rtl) on GitHub
+- Visit [codebase](https://github.com/PerseusTheGreat/bootstrap-4-rtl) on GitHub
 - Visit [example pages](http://example.bootstrapper.ir/) in RTL direction.
 - RTL Hints
   - Always follow XHTML rules.
