@@ -1,0 +1,8 @@
+# OS or Editor folders
+Thumbs.db
+*.sln
+Web.config
+
+# Folders to ignore
+/node_modules/
+/.vs/
