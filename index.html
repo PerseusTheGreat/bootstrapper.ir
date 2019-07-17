@@ -59,22 +59,36 @@
         href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" 
         integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" 
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@laylazi/bootstrap-rtl/dist/css/bootstrap.min.css" />
     <style>.border-left-5 { border-left-width: 5px !important; }</style>
 </head>
 
 <body>
     <div class="container my-5">
         <div class="row">
-            <div class="col-12 col-md-5 order-md-2">
+            <div class="col-12 col-md-7 order-md-1">
+                <h1 class="display-4 mb-3">Bootstrap 4 RTL</h1>
+                <blockquote class="border-left border-left-5 p-3 bg-light rounded d-md-none">
+                    <p>
+                        First and Most Accurate RTL Edition of
+                        <span class="d-inline-block">Bootstrap 4.x</span>
+                        <span class="d-inline-block">(since 2018 Feb)</span>
+                    </p>
+                    <footer class="blockquote-footer">
+                        Adapted by :
+                        &nbsp;<a href="https://github.com/PerseusTheGreat" target="_blank">Arash Laylazi</a>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-5 order-md-2 mb-3">
                 <img class="img-fluid rounded" 
                     alt="Bootstrap 4 RTL logo" 
                     src="assets/img/brand/bootstrap-social-logo-rtl.png" />
             </div>
             <div class="col-12 col-md-7 order-md-1">
-                <h1 class="display-4 mb-3">Bootstrap 4 RTL</h1>
-
-                <blockquote class="border-left border-left-5 p-3 bg-light rounded">
+                <blockquote class="border-left border-left-5 p-3 bg-light rounded d-none d-md-block">
                     <p>
                         First and Most Accurate RTL Edition of
                         <span class="d-inline-block">Bootstrap 4.x</span>
@@ -87,12 +101,32 @@
                 </blockquote>
 
                 <a class="btn btn-lg btn-outline-primary d-flex mb-3 p-0" 
-                    href="/archive/bootstrap-4.3.1-plus-rtl-rev.11-dist.zip" 
+                    href="/archive/bootstrap-4.3.1-plus-rtl-rev.12-dist.zip" 
                     target="_blank">
                     <span class="d-inline-flex p-3 border-right border-primary bg-primary text-white">
                         <i class="fas fa-download align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3">Download ver. 4.3.1 + RTL rev. 11</span>
+                    <span class="flex-fill text-left align-self-center px-3">Download ver. 4.3.1 + RTL rev. 12 (zipped)</span>
+                </a>
+
+                <a class="btn btn-lg btn-outline-primary d-flex mb-3 p-0" 
+                    href="https://unpkg.com/@laylazi/bootstrap-rtl/" 
+                    target="_blank">
+                    <span class="d-inline-flex p-3 border-right border-primary bg-primary text-white">
+                        <i class="fas fa-server align-self-center"></i>
+                    </span>
+                    <span class="flex-fill text-left align-self-center px-3">Latest version/revision on UNPKG CDN</span>
+                </a>
+
+                <a class="btn btn-lg btn-outline-primary d-flex mb-3 p-0" 
+                    href="https://www.npmjs.com/package/@laylazi/bootstrap-rtl" 
+                    target="_blank">
+                    <span class="d-inline-flex p-3 border-right border-primary bg-primary text-white">
+                        <i class="fab fa-npm align-self-center"></i>
+                    </span>
+                    <span class="flex-fill text-left align-self-center px-3 text-monospace">
+                        npm i @laylazi/bootstrap-rtl
+                    </span>
                 </a>
 
                 <a class="btn btn-lg btn-outline-primary d-flex mb-3 p-0" 
@@ -113,7 +147,7 @@
                     <span class="flex-fill text-left align-self-center px-3">Examples in RTL direction</span>
                 </a>
 
-                <a class="btn btn-lg btn-outline-primary d-flex mb-3 p-0" 
+                <a class="btn btn-lg btn-outline-primary d-flex p-0" 
                     href="https://github.com/PerseusTheGreat/bootstrap-4-rtl" 
                     target="_blank">
                     <span class="d-inline-flex p-3 border-right border-primary bg-primary text-white">
@@ -128,34 +162,39 @@
                 <h2 class="font-weight-normal mt-5">RTL Hints</h2>
                 <hr />
                 <ul>
-                    <li>Always follow XHTML rules.</li>
-                    <li>Use UTF-8 encoding.</li>
+                    <li>Use this package like official package.</li>
                     <li>
                         Use <code class="bg-light">&lt;html ... dir="rtl" ... &gt;</code>
-                        for correct PRINT layout and also, because of MSIE cripple 😜 layout engine.
+                        for correct PRINT layout and also, because of MS IE/EDGE layout engine RTL capabilities.
                     </li>
-                    <li>In case of adapting / converting <strong>Bootstrap 4 templates</strong>:
+                    <li>Use UTF-8 encoding.</li>
+                    <li>Always follow XHTML rules.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="font-weight-normal mt-5">In case of adapting/converting Bootstrap&copy; 4 templates:</h2>
+                <hr />
+                <ul>
+                    <li>Replace all official <code class="bg-light">bootstrap.css</code> references by <code class="bg-light">bootstrap-rtl.css</code> in all HTML files.</li>
+                    <li>Inside every HTML file, find these direction specific CSS class names and change them:
                         <ul>
-                            <li>Replace all official <code class="bg-light">bootstrap.css</code> references by <code class="bg-light">bootstrap-rtl.css</code> in all HTML files.</li>
-                            <li>Inside every HTML file, find these direction specific CSS class names and change them:
-                                <ul>
-                                    <li><code class="bg-light">border-left</code> to <code class="bg-light">border-right</code> and vice versa.</li>
-                                    <li><code class="bg-light">border-left-0</code> to <code class="bg-light">border-right-0</code> and vice versa.</li>
-                                    <li><code class="bg-light">rounded-left</code> to <code class="bg-light">rounded-right</code> and vice versa.</li>
-                                    <li><code class="bg-light">float-left</code> to <code class="bg-light">float-right</code> and vice versa.</li>
-                                    <li><code class="bg-light">ml-*</code> to <code class="bg-light">mr-*</code> and vice versa.</li>
-                                    <li><code class="bg-light">pl-*</code> to <code class="bg-light">pr-*</code> and vice versa.</li>
-                                    <li><code class="bg-light">text-left</code> to <code class="bg-light">text-right</code> and vice versa.</li>
-                                    <li><code class="bg-light">text-*-left</code> to <code class="bg-light">text-*-right</code> and vice versa.</li>
-                                    <li><code class="bg-light">dropleft</code> to <code class="bg-light">dropright</code> and vice versa.</li>
-                                    <li><code class="bg-light">dropdown-menu-left</code> to <code class="bg-light">dropdown-menu-right</code> and vice versa.</li>
-                                    <li><code class="bg-light">dropdown-menu-*-left</code> to <code class="bg-light">dropdown-menu-*-right</code> and vice versa.</li>
-                                </ul>
-                            </li>
-                            <li>Also, to correct <strong>Popovers</strong> / <strong>Tooltips</strong> direction, change all <code class="bg-light">data-placement="left"</code> to <code class="bg-light">data-placement="right"</code> and vice versa.</li>
-                            <li>After that, use <a href="https://rtlcss.com/playground/" target="_blank">RTLCSS</a> to adapt / convert all customized CSS codes to RTL edition.</li>
+                            <li><code class="bg-light">border-left</code> to <code class="bg-light">border-right</code> and vice versa.</li>
+                            <li><code class="bg-light">border-left-0</code> to <code class="bg-light">border-right-0</code> and vice versa.</li>
+                            <li><code class="bg-light">rounded-left</code> to <code class="bg-light">rounded-right</code> and vice versa.</li>
+                            <li><code class="bg-light">float-left</code> to <code class="bg-light">float-right</code> and vice versa.</li>
+                            <li><code class="bg-light">ml-*</code> to <code class="bg-light">mr-*</code> and vice versa.</li>
+                            <li><code class="bg-light">pl-*</code> to <code class="bg-light">pr-*</code> and vice versa.</li>
+                            <li><code class="bg-light">text-left</code> to <code class="bg-light">text-right</code> and vice versa.</li>
+                            <li><code class="bg-light">text-*-left</code> to <code class="bg-light">text-*-right</code> and vice versa.</li>
+                            <li><code class="bg-light">dropleft</code> to <code class="bg-light">dropright</code> and vice versa.</li>
+                            <li><code class="bg-light">dropdown-menu-left</code> to <code class="bg-light">dropdown-menu-right</code> and vice versa.</li>
+                            <li><code class="bg-light">dropdown-menu-*-left</code> to <code class="bg-light">dropdown-menu-*-right</code> and vice versa.</li>
                         </ul>
                     </li>
+                    <li>Also, to correct <strong>Popovers</strong> / <strong>Tooltips</strong> direction, change all <code class="bg-light">data-placement="left"</code> to <code class="bg-light">data-placement="right"</code> and vice versa.</li>
+                    <li>After that, use <a href="https://rtlcss.com/playground/" target="_blank">RTLCSS</a> to adapt / convert all customized CSS codes to RTL edition.</li>
                 </ul>
             </div>
         </div>
