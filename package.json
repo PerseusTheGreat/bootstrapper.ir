@@ -1,6 +1,6 @@
 {
   "name": "bootstrapper.ir",
-  "version": "4.5.0",
+  "version": "4.5.0-1",
   "revision": "1",
   "description": "Frontpage of Bootstrap 4 RTL presentation website",
   "author": "Arash Laylazi",
@@ -9,7 +9,7 @@
     "url": "git+https://github.com/PerseusTheGreat/bootstrapper.ir.git"
   },
   "license": "MIT",
-  "homepage": "http://bootstrapper.ir/",
+  "homepage": "https://bootstrapper.ir/",
   "main": "index.html",
   "keywords": [
     "bootstrap",
