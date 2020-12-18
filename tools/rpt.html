@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta http-equiv="content-language" content="en-US" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Responsive Presentation Tester</title>
+    <meta name="author" content="Arash Laylazi (www.laylazi.ir)" />
+    <meta name="description" content="A free and light tool to test UI/UX responsiveness based on grid system breakpoints of Bootstrap 4" />
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Responsiveness,Responsive,Test,Tool,UI,UX,Bootstrap,Grid,System,Breakpoint,Bootstrap 4,Arash,Laylazi,Leylazi,Leilazi,آرش,لیلازی,آرش لیلازی" />
+
+    <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous" />
+    <style>
+        body { min-width: 575px !important; }
+        #targetFrame { height: calc(100vh - 134px); /* 134 = 54 + 80 */ width: 539px; transition: max-width 1s; }
+    </style>
+</head>
+
+<body class="bg-dark text-light text-monospace overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="input-group">
+                <input id="address" 
+                       type="url" 
+                       class="form-control"
+                       placeholder="enter an url [examlpe -> https://bootstrapper.ir]" 
+                       aria-label="Url"
+                       aria-describedby="button-browse">
+                <div class="input-group-append">
+                    <button id="button-browse"
+                            type="button"
+                            class="btn btn-outline-secondary">
+                        Go
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <iframe id="targetFrame" class="d-block mx-auto border w-100" referrerpolicy="unsafe-url"></iframe>
+
+    <nav class="navbar fixed-bottom navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-between w-100">
+                    <li class="nav-item text-center d-inline-block active">
+                        <a class="nav-link" href="#" data-width="575px">
+                            <i class="fas fa-mobile-alt"></i>
+                            Extra Small
+                            <br />
+                            <small>up to 575 px</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center d-none d-sm-inline-block">
+                        <a class="nav-link" href="#" data-width="767px">
+                            <i class="fas fa-tablet-alt"></i>
+                            Small
+                            <br />
+                            <small>576 to 767 px</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center d-none d-md-inline-block">
+                        <a class="nav-link" href="#" data-width="991px">
+                            <i class="fas fa-laptop"></i>
+                            Medium
+                            <br />
+                            <small>768 to 991 px</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center d-none d-lg-inline-block">
+                        <a class="nav-link" href="#" data-width="1199px">
+                            <i class="fas fa-desktop"></i>
+                            Large
+                            <br />
+                            <small>992 to 1199 px</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center d-none d-xl-inline-block">
+                        <a class="nav-link" href="#" data-width="100%">
+                            <i class="fas fa-tv"></i>
+                            Extra Large
+                            <br />
+                            <small>1200 px and above</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous" defer="defer"></script>
+    <script src="https://unpkg.com/bootstrap@4.5.3/dist/js/bootstrap.min.js" crossorigin="anonymous" defer="defer"></script>
+    <script src="rpt.min.js" defer="defer"></script>
+</body>
+
+</html>
