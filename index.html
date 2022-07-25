@@ -27,6 +27,7 @@
 
     <script type="application/ld+json">{"@type":"WebSite","url":"https://bootstrapper.ir/","headline":"Bootstrap 4 RTL","name":"bootstrapper.ir","@context":"http://schema.org"}</script>
     <!-- End SEO -->
+    
     <!-- Begin Icon -->
     <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon.ico" />
@@ -55,7 +56,7 @@
     <!-- End Icon -->
 
     <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
           crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/@laylazi/bootstrap-rtl/dist/css/bootstrap.min.css" />
     <style>
@@ -105,12 +106,12 @@
                 </blockquote>
 
                 <a class="btn btn-lg btn-outline-indigo d-flex mb-3 p-0"
-                   href="/archive/bootstrap-4.6.1-plus-rtl-rev.1-dist.zip"
+                   href="/archive/bootstrap-4.6.2-plus-rtl-rev.1-dist.zip"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
                         <i class="fas fa-download fa-fw align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3">Download ver. 4.6.1 + RTL rev. 1 (zipped)</span>
+                    <span class="flex-fill text-left align-self-center px-3 text-truncate">Download ver. 4.6.2 + RTL rev. 1 (zipped)</span>
                 </a>
 
                 <a class="btn btn-lg btn-outline-indigo d-flex mb-3 p-0"
@@ -119,7 +120,7 @@
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
                         <i class="fas fa-server fa-fw align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3">Latest version/revision on UNPKG CDN</span>
+                    <span class="flex-fill text-left align-self-center px-3 text-truncate">Latest version/revision on UNPKG CDN</span>
                 </a>
 
                 <a class="btn btn-lg btn-outline-indigo d-flex mb-3 p-0"
@@ -128,7 +129,7 @@
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
                         <i class="fab fa-npm fa-fw align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3 text-monospace">
+                    <span class="flex-fill text-left align-self-center px-3 text-monospace text-truncate">
                         npm i @laylazi/bootstrap-rtl
                     </span>
                 </a>
@@ -139,7 +140,7 @@
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
                         <i class="fas fa-book fa-fw align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3">Full documentations in RTL direction</span>
+                    <span class="flex-fill text-left align-self-center px-3 text-truncate">Full documentations in RTL direction</span>
                 </a>
 
                 <a class="btn btn-lg btn-outline-indigo d-flex mb-3 p-0"
@@ -148,22 +149,30 @@
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
                         <i class="fas fa-copy fa-fw align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3">Examples in RTL direction</span>
+                    <span class="flex-fill text-left align-self-center px-3 text-truncate">Examples in RTL direction</span>
                 </a>
 
-                <a class="btn btn-lg btn-outline-indigo d-flex p-0"
+                <a class="btn btn-lg btn-outline-indigo d-flex mb-3 p-0"
                    href="https://github.com/PerseusTheGreat/bootstrap-4-rtl"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
                         <i class="fab fa-github fa-fw align-self-center"></i>
                     </span>
-                    <span class="flex-fill text-left align-self-center px-3">Codebase</span>
+                    <span class="flex-fill text-left align-self-center px-3 text-truncate">Codebase</span>
                 </a>
+
+                <blockquote class="border-danger border-left border-left-5 p-3 bg-light text-danger rounded d-none d-md-block">
+                    <p>Bootstrap 4 will officially end of life January 1, 2023, though you’re obviously welcome to continue using it longer than that.</p>
+                    <footer class="blockquote-footer">
+                        Source:
+                        &nbsp;<a href="https://blog.getbootstrap.com/2022/07/19/bootstrap-4-6-2/" target="_parent">TWBS&copy; official blog</a>
+                    </footer>
+                </blockquote>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-normal mt-5">Hints</h2>
+                <h2 class="font-weight-normal mt-3">Hints</h2>
                 <hr />
                 <ul>
                     <li>Use this package like official package.</li>
@@ -182,7 +191,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-normal mt-5">In case of adapting/converting Bootstrap 4.x templates:</h2>
+                <h2 class="font-weight-normal mt-3">In case of adapting/converting Bootstrap 4.x templates:</h2>
                 <hr />
                 <ul>
                     <li>Replace official <code class="bg-light">bootstrap.js</code> references by <code class="bg-light">bootstrap.js</code> [of this package] , in all HTML files. (just in case of using BS Carousel)</li>
@@ -211,7 +220,24 @@
         <div class="row">
             <div class="col-12 text-center">
                 <hr />
-                Hosted by GitHub&copy; Pages - DNS Served by CloudFlare&copy; - Secured by Let&#39;s Encrypt&copy;
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0 text-center">
+                <a href="https://pages.github.com/" target="_parent">
+                    <img src="assets/img/brand/github.svg" alt="GitHub mark" height="40" />
+                </a>
+                <br/>Hosted on GitHub Pages
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0 text-center">
+                <a href="https://www.cloudflare.com/dns/" target="_parent">
+                    <img src="assets/img/brand/cloudflare.svg" alt="Cloudflare icon" height="40" />
+                </a>
+                <br/>Routed by Cloudflare DNS
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <a href="https://letsencrypt.org/" target="_parent">
+                    <img src="assets/img/brand/letsencript.svg" alt="Let's Encrypt icon" height="40" />
+                </a>
+                <br/>Secured by Let's Encrypt
             </div>
         </div>
     </div>
