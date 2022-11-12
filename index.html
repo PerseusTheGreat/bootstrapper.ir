@@ -56,9 +56,13 @@
     <!-- End Icon -->
 
     <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+          type="text/css"
+          href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
           crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/@laylazi/bootstrap-rtl/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" 
+          type="text/css"
+          href="https://unpkg.com/@laylazi/bootstrap-rtl/dist/css/bootstrap.min.css"
+          crossorigin="anonymous" />
     <style>
         .border-left-5 { border-left-width: 5px !important; }
         .btn-outline-indigo { color: #654195; border-color: #654195; }
@@ -66,6 +70,7 @@
         .bg-indigo { background-color: #654195; }
         .border-indigo { border-color: #654195 !important; }
     </style>
+    <script src="assets/scripts/fallback.min.js"></script>
 </head>
 
 <body>
@@ -109,7 +114,7 @@
                    href="/archive/bootstrap-4.6.2-plus-rtl-rev.1-dist.zip"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
-                        <i class="fas fa-download fa-fw align-self-center"></i>
+                        <i class="fa-solid fa-download fa-fw align-self-center"></i>
                     </span>
                     <span class="flex-fill text-left align-self-center px-3 text-truncate">Download ver. 4.6.2 + RTL rev. 1 (zipped)</span>
                 </a>
@@ -118,7 +123,7 @@
                    href="https://unpkg.com/@laylazi/bootstrap-rtl/"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
-                        <i class="fas fa-server fa-fw align-self-center"></i>
+                        <i class="fa-solid fa-server fa-fw align-self-center"></i>
                     </span>
                     <span class="flex-fill text-left align-self-center px-3 text-truncate">Latest version/revision on UNPKG CDN</span>
                 </a>
@@ -127,7 +132,7 @@
                    href="https://www.npmjs.com/package/@laylazi/bootstrap-rtl"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
-                        <i class="fab fa-npm fa-fw align-self-center"></i>
+                        <i class="fa-brands fa-npm fa-fw align-self-center"></i>
                     </span>
                     <span class="flex-fill text-left align-self-center px-3 text-monospace text-truncate">
                         npm i @laylazi/bootstrap-rtl
@@ -138,7 +143,7 @@
                    href="https://docs.bootstrapper.ir/"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
-                        <i class="fas fa-book fa-fw align-self-center"></i>
+                        <i class="fa-solid fa-book fa-fw align-self-center"></i>
                     </span>
                     <span class="flex-fill text-left align-self-center px-3 text-truncate">Full documentations in RTL direction</span>
                 </a>
@@ -147,7 +152,7 @@
                    href="https://example.bootstrapper.ir/"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
-                        <i class="fas fa-copy fa-fw align-self-center"></i>
+                        <i class="fa-solid fa-file-code fa-fw align-self-center"></i>
                     </span>
                     <span class="flex-fill text-left align-self-center px-3 text-truncate">Examples in RTL direction</span>
                 </a>
@@ -156,7 +161,7 @@
                    href="https://github.com/PerseusTheGreat/bootstrap-4-rtl"
                    target="_blank">
                     <span class="d-inline-flex p-3 border-right border-indigo bg-indigo text-white">
-                        <i class="fab fa-github fa-fw align-self-center"></i>
+                        <i class="fa-brands fa-github fa-fw align-self-center"></i>
                     </span>
                     <span class="flex-fill text-left align-self-center px-3 text-truncate">Codebase</span>
                 </a>
@@ -218,7 +223,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center mb-3">
                 <hr />
             </div>
             <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0 text-center">
@@ -231,7 +236,7 @@
                 <a href="https://www.cloudflare.com/dns/" target="_parent">
                     <img src="assets/img/brand/cloudflare.svg" alt="Cloudflare icon" height="40" />
                 </a>
-                <br/>Routed by Cloudflare DNS
+                <br/>Resolved by Cloudflare DNS
             </div>
             <div class="col-12 col-md-4 text-center">
                 <a href="https://letsencrypt.org/" target="_parent">
