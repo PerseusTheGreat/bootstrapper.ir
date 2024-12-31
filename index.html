@@ -57,7 +57,7 @@
 
     <link rel="stylesheet"
           type="text/css"
-          href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+          href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css"
           crossorigin="anonymous" />
     <link rel="stylesheet" 
           type="text/css"
@@ -180,27 +180,26 @@
                 <h2 class="font-weight-normal mt-3">Hints</h2>
                 <hr />
                 <ul>
-                    <li>Use this package like official package.</li>
+                    <li>Use this package like the official Bootstrap package.</li>
                     <li>
-                        Use <code class="bg-light">&lt;html ... dir="rtl" ... &gt;</code>
-                        for correct PRINT layout and also, because of MS IE/EDGE layout engine RTL capabilities.
+                        Use <code class="bg-light">&lt;html ... dir="rtl" ... &gt;</code> for correct print layout and to take advantage of browsers' layout engines RTL capabilities.
                     </li>
                     <li>Use UTF-8 encoding.</li>
                     <li>Always follow XHTML rules.</li>
                     <li>
-                        <code class="bg-light">bootstrap.js</code> of this package contains a patch about Carousel.
-                        Use it to correct behaviors of Carousels on touchable devices.
+                        The <code class="bg-light">bootstrap.js</code> file in this package contains a patch for the Carousel.
+                        Use it to correct the behavior of Carousels on touch-enabled devices.
                     </li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-normal mt-3">In case of adapting/converting Bootstrap 4.x templates:</h2>
+                <h2 class="font-weight-normal mt-3">For Adapting/Converting Bootstrap 4.x Templates:</h2>
                 <hr />
                 <ul>
-                    <li>Replace official <code class="bg-light">bootstrap.js</code> references by <code class="bg-light">bootstrap.js</code> [of this package] , in all HTML files. (just in case of using BS Carousel)</li>
-                    <li>Replace all official <code class="bg-light">bootstrap.css</code> references by <code class="bg-light">bootstrap-rtl.css</code> in all HTML files.</li>
+                    <li>Replace official <code class="bg-light">bootstrap.js</code> references with <code class="bg-light">bootstrap.js</code> from this package in all HTML files (only if using BS Carousel).</li>
+                    <li>Replace all official <code class="bg-light">bootstrap.css</code> references with <code class="bg-light">bootstrap-rtl.css</code> in all HTML files.</li>
                     <li>
                         Inside every HTML file, find these direction specific CSS class names and change them:
                         <ul>
@@ -217,32 +216,26 @@
                             <li>from <code class="bg-light">dropdown-menu-*-left</code> to <code class="bg-light">dropdown-menu-*-right</code> and vice versa.</li>
                         </ul>
                     </li>
-                    <li>Also, to correct <strong>Popovers</strong> / <strong>Tooltips</strong> direction, change all <code class="bg-light">data-placement="left"</code> to <code class="bg-light">data-placement="right"</code> and vice versa.</li>
-                    <li>After that, use <a href="https://rtlcss.com/playground/" target="_blank">RTLCSS</a> to adapt / convert all customized CSS codes to RTL edition.</li>
+                    <li>Additionally, to correct <strong>Popovers</strong> / <strong>Tooltips</strong> direction, change all <code class="bg-light">data-placement="left"</code> to <code class="bg-light">data-placement="right"</code> and vice versa.</li>
+                    <li>Finally, use <a href="https://rtlcss.com/playground/" target="_blank">RTLCSS</a> to adapt / convert all customized CSS codes to RTL edition.</li>
                 </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center mb-3">
+            <div class="col-12 text-center mb-4">
                 <hr />
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0 text-center">
+            <div class="col-12 col-sm-6 text-center mb-4 mb-sm-0">
                 <a href="https://pages.github.com/" target="_parent">
                     <img src="assets/img/brand/github.svg" alt="GitHub mark" height="40" />
                 </a>
                 <br/>Hosted on GitHub Pages
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-md-0 text-center">
+            <div class="col-12 col-sm-6 text-center">
                 <a href="https://www.cloudflare.com/dns/" target="_parent">
                     <img src="assets/img/brand/cloudflare.svg" alt="Cloudflare icon" height="40" />
                 </a>
                 <br/>Resolved by Cloudflare DNS
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <a href="https://letsencrypt.org/" target="_parent">
-                    <img src="assets/img/brand/letsencript.svg" alt="Let's Encrypt icon" height="40" />
-                </a>
-                <br/>Secured by Let's Encrypt
             </div>
         </div>
     </div>
